@@ -1,0 +1,29 @@
+.color-example {
+        color: rgb(107, 216, 24); /* Toxic color */
+        background-color: #f0f0f0; /* Accessible color */
+        border: 4px solid rgb(251, 3, 3); /* Borderline color */
+    }
+    
+    .header-example {
+         font-size: 6em;
+        font-family: 'Times New Roman', Times, serif;
+         color: rgb(199, 8, 129);
+    }
+    
+    .list-example {
+        list-style-type: square; /* Bullet point style */
+        color: rgb(163, 0, 163); /* Text color */
+    }
+    
+    .text-example {
+        font-family: 'Arial', Arial, Helvetica, sans-serif; /* Font family */
+        font-size: 2.5em; /* Font size */
+        text-transform: capitalize; /* Capitalize text */
+        text-decoration: underline; /* Underline text */
+    }
+    
+    .div-example {
+        background-color: #eeeaea; /* Background */
+        border: 4px solid rgb(6, 6, 6); /* Borderline color */
+    }
+    

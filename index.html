@@ -3,29 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tyylikäs verkkosivu aloittelijoille</title>
+    <title>Styled Webpage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
-    
+<body>
     <header>
-         <h1>Tervetuloa tulevan kahvilani verkkosivuille</h1>
-     </header>
-
+        <h1 class="header-example">Huolellisesti tyylitelty kotisivu</h1>
+    </header>
     <nav>
-        <ul>
+         <ul>
             <li><a href="#Menu">Menu</a></li>
-            <li><a href="#Yritys">Yritys</a></li>
-            <li><a href="#Kirjailijat">Kirjailijat</a></li>
+             <li><a href="Me">Me</a></li>
+            <li><a href="#Yhteys">Yhteys</a></li>
         </ul>
-   </nav>
-
+    </nav>
     <main>
-        <h2>Menu</h2>
-        <p>Tästä löydät kahvilaverkkosivun pääasiallisen sisällön menuineen.</p>
+        <section id="Menu">
+            <h2>Introduction</h2>
+            <p class="color-example">Kahvilassa tarjoiltavien asioiden menu.</p>
+        </section>
+        <section id="Me">
+            <h2>Ajatuksemme</h2>
+             <ul class="list-example">
+                <li>Filosofia</li>
+                <li>Tarina</li>
+                <li>Kotimaisuus</li>
+            </ul>
+        </section>
+        <section id="Yhteys">
+            <h2>Contact Me</h2>
+            <p class="text-example">Meihin saat yhteyden soittamalla milloin vain.</p>
+        </section>
     </main>
-
-    <footer id="Kirjailijat">
-        <p>&copy; Samuli Mikkola</p>   
-    </footer>
+    <div class="div-example">
+        Se skulaa, joka ei skagaa.
+    </div>
+    <footer>
+        <p>&copy; Mikkolat, 2025</p>
+     </footer>
 </body>
 </html>
