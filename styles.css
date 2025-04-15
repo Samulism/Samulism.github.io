@@ -1,29 +1,52 @@
-.color-example {
-        color: rgb(107, 216, 24); /* Toxic color */
-        background-color: #f0f0f0; /* Accessible color */
-        border: 4px solid rgb(251, 3, 3); /* Borderline color */
+
+
+/* Background image */
+body {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     
-    .header-example {
-         font-size: 6em;
-        font-family: 'Times New Roman', Times, serif;
-         color: rgb(199, 8, 129);
+    /* Borders for heading elements */
+    h1, h2 {
+        border: 2px solid #000;
     }
     
-    .list-example {
-        list-style-type: square; /* Bullet point style */
-        color: rgb(163, 0, 163); /* Text color */
+    /* Background color and rounded borders for paragraph elements */
+    p {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        padding: 10px;
     }
     
-    .text-example {
-        font-family: 'Arial', Arial, Helvetica, sans-serif; /* Font family */
-        font-size: 2.5em; /* Font size */
-        text-transform: capitalize; /* Capitalize text */
-        text-decoration: underline; /* Underline text */
+    /* Margin and padding properties */
+    header {
+        margin-bottom: 20px;
+    }
+    img {
+        margin: 10px;
+        padding: 5px;
     }
     
-    .div-example {
-        background-color: #eeeaea; /* Background */
-        border: 4px solid rgb(6, 6, 6); /* Borderline color */
+    /* Borders for heading elements */
+    h1, h2 {
+        border: 2px solid #5f5c5c;
+    }
+    
+    /* Background color and rounded borders for paragraph elements */
+    p {
+        background-color: #e20707;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    /* Margin and padding properties */
+    header {
+        margin-bottom: 20px;
+    }
+    img {
+        margin: 10px;
+        padding: 5px;
     }
     
