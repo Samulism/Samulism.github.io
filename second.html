@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rakkaudesta saksalaisiin leipomotuotteisiin ja viineihin</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+  html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-content {
+  flex: 1;
+  padding: 6rem 2rem 4rem;
+}
+
+body, html, #page-content {
+  font-family: "Times New Roman", serif !important;
+  font-size: 18px !important;
+}
+
+.text-justify {
+  text-align: justify;
+}
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Kahvila Saksa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="second.html">Meistä</a></li>
+          <li class="nav-item"><a class="nav-link" href="third.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="fourth.html">Catering</a></li>
+          <li class="nav-item"><a class="nav-link" href="fifth.html">Yhteystiedot</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="page-content" class="container">
+   <section class="container my-5">
+  <h2 class="text-center mb-4">Arkikin voi olla juhlaa</h2>
+  <div class="row">
+    <div class="col-md-6 text-justify">
+      <p>
+        Kahvila Saksa haluaa tuoda saksalaiset  Riesling-viinit ja perinteiset leipomotuotteet lähemmäs arkea. Meille nämä tuotteet eivät ole pelkästään tuotteita – se on kulttuurien yhteentuomista ja tätä kautta yhteisten hetkien luomista. Haluamme tuoda asiakkaidemme ulottuville aitoja makuja Saksasta, aina tuoreista pretzeleistä ja mehukkaista struudeleista laadukkaisiin Riesling-viineihin ja muihin Reininmaan alueen perinteisiin tuotteisiin. Aina ei tarvitse olla juhlapäivä näistä nauttiakseen!
+      </p>
+    </div>
+    <div class="col-md-6 text-justify">
+      <p>
+        Me uskomme näiden herkullisten saksalaisten tuotteiden kuuluvan niin arkeen kuin juhlaan. Siksi valikoimamme ja palvelumme on suunniteltu huolella, jotta voit nauttia niistä yhtä lailla kiireettömänä hetkenä arjessa kuin tärkeänä juhlapäivänäsi. Tervetuloa kokemaan palaa Saksaa – makujen kautta.
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- KUVA JA TEKSTIT -->
+    <div class="text-center mt-5">
+      <img src="toimitusjohtaja.jpeg" alt="Dietrich Salvester" class="img-fluid rounded mb-3" style="max-width: 300px;">
+      <h5 class="fw-bold">Dietrich Salvester</h5>
+      <p class="fst-italic text-muted" style="margin-bottom: 0.5rem;">Toimitusjohtaja</p>
+      <p class="mt-2">"Alles Leckere direkt aus Deutschland – mit Herz und Fachkompetenz"</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
+    <div class="container">
+      <p>Follow us on social media</p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://www.facebook.com" target="_blank" class="text-white fs-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="text-white fs-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="text-white fs-4">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  // Highlight the active nav link based on current URL
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const currentPage = window.location.pathname.split('/').pop(); // e.g., "third.html"
+
+    navLinks.forEach(link => {
+      const linkPage = link.getAttribute('href');
+      if (linkPage === currentPage) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
