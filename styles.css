@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem 0;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  z-index: 1050; /* varmista että navbar näkyy videoelementin päällä */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f8f9fa !important;
+}
+
+.nav-link {
+  color: #ddd !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffc107 !important; /* bootstrap keltainen korostus */
+}
+
+/* Taustavideo index.html:lle */
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.5);
+  pointer-events: none;
+
+}
+
+/* Etusivun kuvat */
+.hero-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.hero-images img {
+  max-width: 48%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.hero-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Container padding to not hide behind navbar (fixed-top) */
+#page-content {
+  padding-top: 5.5rem; /* Tilaa navbarille */
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #ddd;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+/* Form styles */
+form label {
+  font-weight: 600;
+}
+
+form input, form textarea {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #eee;
+  border-radius: 0.3rem;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #ffc107;
+  outline: none;
+  box-shadow: 0 0 5px #ffc107;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .hero-images {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .hero-images img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
